@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Feb, 2018, 5:58:03 PM
+    Author     : meet
+*/
+
+.updtlabel .control-label{
+    padding-top: 0px;
+}
+.txtarea{
+    width: 362px;
+    height: 153px;
+}

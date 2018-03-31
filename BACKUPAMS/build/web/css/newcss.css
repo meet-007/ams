@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 Jan, 2018, 11:26:37 AM
+    Author     : Dell
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Anton|Montserrat');
+body{
+    background-color:#03a9f4;
+    font-family: 'Montserrat',sans-serif;
+    
+}
+h1{
+    text-align:center;
+    color:red;
+    font-size:30px;
+    margin-top:26px;
+    font-family: 'Anton', sans-serif;
+   }
+   form{
+       width:300px;
+       margin:auto;
+   }
+   img{
+       margin-left:80px;
+   } 
+   .well{
+       margin:auto;
+       width:450px;
+       height:420px;
+       margin-top:40px;
+   }
+   @media only screen and (max-width:480px){
+       .well{
+           width:300px;
+       }
+       .form-control{
+           width:80%;
+       }
+       img{
+           position:relative;
+           right:10px;
+       }
+   }
