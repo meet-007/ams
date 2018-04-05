@@ -36,11 +36,7 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Login.findByRole", query = "SELECT l FROM Login l WHERE l.role = :role"),
     @NamedQuery(name = "Login.findByStatus", query = "SELECT l FROM Login l WHERE l.status = :status")})
 public class Login implements Serializable {
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "lid")
-    private Collection<Complain> complainCollection;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "lid")
-    private Collection<Society> societyCollection;
+   
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -141,22 +137,5 @@ public class Login implements Serializable {
         return "reg.Login[ lid=" + lid + " ]";
     }
 
-    @XmlTransient
-    public Collection<Society> getSocietyCollection() {
-        return societyCollection;
-    }
 
-    public void setSocietyCollection(Collection<Society> societyCollection) {
-        this.societyCollection = societyCollection;
-    }
-
-    @XmlTransient
-    public Collection<Complain> getComplainCollection() {
-        return complainCollection;
-    }
-
-    public void setComplainCollection(Collection<Complain> complainCollection) {
-        this.complainCollection = complainCollection;
-    }
-    
 }

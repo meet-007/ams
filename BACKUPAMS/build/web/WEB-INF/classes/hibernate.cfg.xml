@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-  <session-factory>
-    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ams?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">meet123</property>
-    <!--<property name="show_sql">true</property>-->
-    <mapping class="reg.Login"></mapping>
-    <mapping class="reg.Society"></mapping>
-    <mapping class="reg.SocietyMembers"></mapping>
-    <mapping class="reg.Apartment"></mapping>
-    <mapping class="reg.Complain"></mapping>
-    <mapping class="reg.Notice"></mapping>
-  </session-factory>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ams?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">meet123</property>
+        <mapping class="reg.Album"></mapping>
+        <mapping class="reg.Apartment"></mapping>
+        <mapping class="reg.Complain"></mapping>
+        <mapping class="reg.Login"></mapping>
+        <mapping class="reg.Notice"></mapping>
+        <mapping class="reg.PicGallery"></mapping>
+        <mapping class="reg.Society"></mapping>
+        <mapping class="reg.SocietyMembers"></mapping>
+    </session-factory>
 </hibernate-configuration>

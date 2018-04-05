@@ -57,8 +57,8 @@
                                         <td><%=name%></td>
                                         <td><%=date%></td>
                                         <td><%=Desc%></td>
-                                        <td><i class="fa fa-thumbs-o-up"></i><%=upvotes%></td>
-                                        <td><i class="fa fa-thumbs-o-down"></i><%=dwnvotes%></td>
+                                        <td><a href="VoteCount?up=<%=c.getComplainId()%>"><i class="fa fa-thumbs-o-up"></i><%=upvotes%></a></td>
+                                        <td><a href="VoteCount?down=<%=c.getComplainId()%>"><i class="fa fa-thumbs-o-down"></i><%=dwnvotes%></a></td>
                                     </tr> 
                                     <%
                                             }

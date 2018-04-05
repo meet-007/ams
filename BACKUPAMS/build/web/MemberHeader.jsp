@@ -421,7 +421,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<li class="dropdown profile_details_drop">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<div class="profile_img">	
-									<span class="prfil-img"><img src="images/22.jpg" alt=""> </span> 
+									<span class="prfil-img"><img src="upload/<%=sm.getImage()%>" alt=""> </span> 
 									<div class="user-name">
                                                                            
 										<p><%=l.getUsername()%></p>

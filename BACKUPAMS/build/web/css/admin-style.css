@@ -850,6 +850,8 @@ span.prfil-img img,.activity-img img,.media>.pull-left img,.inbox-page img {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    width: 100%;
+    height: 60px;
 }
 .profile_details ul li ul.dropdown-menu.drp-mnu {
     padding: 1em;

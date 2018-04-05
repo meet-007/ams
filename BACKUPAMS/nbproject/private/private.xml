@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/reg/SocietyMembers.java</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/GetSmem/GetMemberFrmLid.java</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/web/MemberHeader.jsp</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/mod/complain/ViewMySocietyComplains.java</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/web/VoteComplain.jsp</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/web/MyComplains.jsp</file>
-            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/reg/Complain.java</file>
+            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/web/ShowAlbum.jsp</file>
+            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/web/AddAlbum.jsp</file>
+            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/hbutil/NewHibernateUtil.java</file>
+            <file>file:/C:/Users/meet/Documents/NetBeansProjects/BACKUPAMS/src/java/photoGallery/AddPhotos.java</file>
         </group>
     </open-files>
 </project-private>

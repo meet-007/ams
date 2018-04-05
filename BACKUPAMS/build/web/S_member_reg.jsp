@@ -19,7 +19,7 @@
             <div class="main-page">
                 <h2>Add Society members</h2>
                 <br/>
-                <form role="form" action="MemberReg">
+                <form role="form" action="FileUploadServlet" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInput"> First Name:</label>
                         <input type="text" class="form-control" id="exampleInput" placeholder="Enter First Name" name="fname">
@@ -32,45 +32,49 @@
                         <label for="exampleInput"> Username:</label>
                         <input type="text" class="form-control" id="exampleInput" placeholder=" username " name="uname">
                     </div>
-                
-                <div class="form-group">
-                    <label for="exampleInput">Password:</label>
-                    <input type="password" class="form-control" id="exampleInput" placeholder="Password " name="pwd">
-                </div> 
-               <!-- <div class="form-group">
-                    <label for="exampleInputSocietyName">Society: </label>
-                    <input type="text" class="form-control" id="exampleInputSocietyName" value="" placeholder="Society" />
-                </div>-->
-                <div class="form-group">
-                    <label for="exampleInput"> Email:</label>
-                    <input type="text" class="form-control" id="exampleInput" placeholder="email" name="email">
-                </div>
-               <div class="form-group">
-                    <label for="exampleInput"> Mobile:</label>
-                    <input type="text" class="form-control" id="exampleInput" placeholder="mobile" name="mobile">
-                </div>
-             <!--   <div class="form-group">
-                    <label for="exampleInput"> Image:</label>
-                    <input type="text" class="form-control" id="exampleInput" placeholder="Image">
-                </div>-->
-             <div class="form-group">
-               <label for="exampleInput"> Member Type:</label> 
-                <select class="form-control" name="memtype">
-                    <option value="Owner">Owner</option>
-                    <option value="Tenant">Tenant</option>
-                </select>
-             </div>
-             <!--   <div class="form-group">
-                    <label for="exampleInput">Id Proof:</label>
-                    <input type="text" class="form-control" id="exampleInput" placeholder="Id Proof">
-                </div>-->
-                </br>
-                </br>   
-                <button type="submit" class="btn btn-default">Register</button>
-            </form>
-      </div>
-    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInput">Password:</label>
+                        <input type="password" class="form-control" id="exampleInput" placeholder="Password " name="pwd">
+                    </div> 
+                    <!-- <div class="form-group">
+                         <label for="exampleInputSocietyName">Society: </label>
+                         <input type="text" class="form-control" id="exampleInputSocietyName" value="" placeholder="Society" />
+                     </div>-->
+                    <div class="form-group">
+                        <label for="exampleInput"> Email:</label>
+                        <input type="text" class="form-control" id="exampleInput" placeholder="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput"> Mobile:</label>
+                        <input type="text" class="form-control" id="exampleInput" placeholder="mobile" name="mobile">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput"> Image:</label>
+                        <input type="file"  id="exampleInput"  name="uploadFile">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput"> Member Type:</label> 
+                        <select class="form-control" name="memtype">
+                            <option value="Owner">Owner</option>
+                            <option value="Tenant">Tenant</option>
+                        </select>
+                    </div>
+                    <!--   <div class="form-group">
+                           <label for="exampleInput">Id Proof:</label>
+                           <input type="text" class="form-control" id="exampleInput" placeholder="Id Proof">
+                       </div>-->
+                    </br>
+                    </br>   
+                    <button type="submit" class="btn btn-default">Register</button>
+                </form>
+                <%
+                if(request.getAttribute("message")!=null)
+                %>
+                <%=request.getAttribute("message")%>
+            </div>
+        </div>
 
 
-</body>
+    </body>
 </html>

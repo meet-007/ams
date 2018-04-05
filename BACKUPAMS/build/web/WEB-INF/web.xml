@@ -58,6 +58,18 @@
         <servlet-name>ViewMySocietyComplains</servlet-name>
         <servlet-class>mod.complain.ViewMySocietyComplains</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VoteCount</servlet-name>
+        <servlet-class>mod.complain.VoteCount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>flupload.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPhotos</servlet-name>
+        <servlet-class>photoGallery.AddPhotos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AdminReg</servlet-name>
         <url-pattern>/AdminReg</url-pattern>
@@ -109,6 +121,18 @@
     <servlet-mapping>
         <servlet-name>ViewMySocietyComplains</servlet-name>
         <url-pattern>/ViewMySocietyComplains</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VoteCount</servlet-name>
+        <url-pattern>/VoteCount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPhotos</servlet-name>
+        <url-pattern>/AddPhotos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
