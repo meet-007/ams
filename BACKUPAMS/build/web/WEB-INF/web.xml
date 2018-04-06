@@ -70,6 +70,22 @@
         <servlet-name>AddPhotos</servlet-name>
         <servlet-class>photoGallery.AddPhotos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetAlbum</servlet-name>
+        <servlet-class>photoGallery.GetAlbum</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>calmaintenance</servlet-name>
+        <servlet-class>mod.maintenance.cal_maintenance</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>viewmaintenance</servlet-name>
+        <servlet-class>mod.maintenance.view_maintenance</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalMyMaintenance</servlet-name>
+        <servlet-class>mod.maintenance.CalMyMaintenance</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AdminReg</servlet-name>
         <url-pattern>/AdminReg</url-pattern>
@@ -133,6 +149,22 @@
     <servlet-mapping>
         <servlet-name>AddPhotos</servlet-name>
         <url-pattern>/AddPhotos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAlbum</servlet-name>
+        <url-pattern>/GetAlbum</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>calmaintenance</servlet-name>
+        <url-pattern>/cal_maintenance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewmaintenance</servlet-name>
+        <url-pattern>/view_maintenance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalMyMaintenance</servlet-name>
+        <url-pattern>/CalMyMaintenance</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

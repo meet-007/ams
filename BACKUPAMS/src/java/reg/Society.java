@@ -40,7 +40,6 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Society.findByNoOfApt", query = "SELECT s FROM Society s WHERE s.noOfApt = :noOfApt"),
     @NamedQuery(name = "Society.findByContact", query = "SELECT s FROM Society s WHERE s.contact = :contact")})
 public class Society implements Serializable {
-    
    
 
   
@@ -176,6 +175,7 @@ public class Society implements Serializable {
     public String toString() {
         return "reg.Society[ sid=" + sid + " ]";
     }
+
 
     
 }

@@ -15,5 +15,6 @@
         <mapping class="reg.PicGallery"></mapping>
         <mapping class="reg.Society"></mapping>
         <mapping class="reg.SocietyMembers"></mapping>
+        <mapping class="reg.CalMaintenance"></mapping>
     </session-factory>
 </hibernate-configuration>

@@ -34,7 +34,7 @@ import reg.SocietyMembers;
 public class AddPhotos extends HttpServlet {
 
     // location to store file uploaded
-    private static final String UPLOAD_DIRECTORY = "upload/eventuploads";
+    private String UPLOAD_DIRECTORY = "upload\\eventuploads";
 
     // upload settings
     private static final int MEMORY_THRESHOLD = 1024 * 1024 * 3; 	// 3MB
@@ -78,16 +78,7 @@ public class AddPhotos extends HttpServlet {
 
         // constructs the directory path to store upload file
         // this path is relative to application's directory
-        String uploadPath = getServletContext().getRealPath("")
-                + File.separator + UPLOAD_DIRECTORY;
-
-        // creates the directory if it does not exist
-        File uploadDir = new File(uploadPath);
-        if (!uploadDir.exists()) {
-            uploadDir.mkdir();
-        }
-        String msg = "";
-        try {
+         try {
             // parses the request's content to extract file data
             @SuppressWarnings("unchecked")
             List<FileItem> formItems = upload.parseRequest(request);
@@ -103,6 +94,17 @@ public class AddPhotos extends HttpServlet {
                 Login login = (Login) s.getAttribute("user");
                 int uid = login.getLid();
                 Society soc = getsoc.getSid(uid);
+               // UPLOAD_DIRECTORY += File.separator+soc.getSocName()+File.separator+eventname;
+        String uploadPath = getServletContext().getRealPath("")
+                + File.separator + UPLOAD_DIRECTORY;
+
+        // creates the directory if it does not exist
+        File uploadDir = new File(uploadPath);
+        if (!uploadDir.exists()) {
+            uploadDir.mkdir();
+        }
+        String msg = "";
+       
                 FileItem item = null;
                 String filePath = null;
                 String fileName = null;
