@@ -86,6 +86,10 @@
         <servlet-name>CalMyMaintenance</servlet-name>
         <servlet-class>mod.maintenance.CalMyMaintenance</servlet-class>
     </servlet>
+     <servlet>
+        <servlet-name>SavePaymentDetails</servlet-name>
+        <servlet-class>Paytm_java.SavePaymentDetails</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AdminReg</servlet-name>
         <url-pattern>/AdminReg</url-pattern>
@@ -165,6 +169,10 @@
     <servlet-mapping>
         <servlet-name>CalMyMaintenance</servlet-name>
         <url-pattern>/CalMyMaintenance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SavePaymentDetails</servlet-name>
+        <url-pattern>/SavePaymentDetails</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

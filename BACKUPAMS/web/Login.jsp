@@ -17,7 +17,6 @@
   <div class="container">
        <div class="row">
          <div class="col-md-8 col-md-offset-2">
-             <h1>Login Form</h1>
             <div class="well">
                 <form action="Login" role="form" method="POST">
                      <img src="images/download.jpg" height="100" width="100" style="border-radius:50px;margin-left:100px;" alt="Cinque Terre">           

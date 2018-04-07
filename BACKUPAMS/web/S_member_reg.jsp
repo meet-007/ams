@@ -17,6 +17,8 @@
     <body>
         <div id="page-wrapper">
             <div class="main-page">
+                <div id="page-wrapper">
+                <div class="main-page">
                 <h2>Add Society members</h2>
                 <br/>
                 <form role="form" action="FileUploadServlet" method="post" enctype="multipart/form-data">
@@ -69,9 +71,13 @@
                     <button type="submit" class="btn btn-default">Register</button>
                 </form>
                 <%
-                if(request.getAttribute("message")!=null)
+                if(request.getAttribute("message")!=null){
                 %>
                 <%=request.getAttribute("message")%>
+                <%}%>
+                </div>
+                </div>
+                
             </div>
         </div>
 

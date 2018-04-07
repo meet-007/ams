@@ -158,6 +158,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 </ul>
               </li>
               <li class="treeview">
+                <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>photo gallery</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="GetAlbum"><i class="fa fa-angle-right"></i>Gallery</a></li>
+                </ul>
+              </li>
+              <li class="treeview">
                 <a href="ViewNotice">
                 <i class="fa fa-pie-chart"></i>
                 <span>View Notice</span>
@@ -165,13 +175,21 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 </a>
               </li>
               <li class="treeview">
+                <a href="view_maintenance">
+                <i class="fa fa-pie-chart"></i>
+                <span>maintenance</span>
+                <span class="label label-primary pull-right">new</span>
+                </a>
+              </li>
+              
+<!--              <li class="treeview">
                 <a href="view_meeting_time.jsp">
                 <i class="fa fa-pie-chart"></i>
                 <span>Meetings</span>
                 <span class="label label-primary pull-right">new</span>
                 </a>
-              </li>
-              <li class="treeview">
+              </li>-->
+<!--              <li class="treeview">
               <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -184,14 +202,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                   <li><a href="buttons.html"><i class="fa fa-angle-right"></i> Buttons</a></li>
                   <li><a href="typography.html"><i class="fa fa-angle-right"></i> Typography</a></li>
                 </ul>
-              </li>
-			  <li>
+              </li>-->
+<!--			  <li>
                 <a href="widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span>
                 <small class="label pull-right label-info">08</small>
                 </a>
-              </li>
-              <li class="treeview">
+              </li>-->
+<!--              <li class="treeview">
                 <a href="#">
                 <i class="fa fa-edit"></i> <span>Forms</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -217,8 +235,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <ul class="treeview-menu">
                   <li><a href="inbox.html"><i class="fa fa-angle-right"></i> Mail Inbox </a></li>
                   <li><a href="compose.html"><i class="fa fa-angle-right"></i> Compose Mail </a></li>
-                </ul>
-              </li>
+                </ul>-->
+<!--              </li>
               <li class="treeview">
                 <a href="#">
                 <i class="fa fa-folder"></i> <span>Examples</span>
@@ -235,7 +253,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
               <li class="header">LABELS</li>
               <li><a href="#"><i class="fa fa-angle-right text-red"></i> <span>Important</span></a></li>
               <li><a href="#"><i class="fa fa-angle-right text-yellow"></i> <span>Warning</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-right text-aqua"></i> <span>Information</span></a></li>
+              <li><a href="#"><i class="fa fa-angle-right text-aqua"></i> <span>Information</span></a></li>-->
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -404,7 +422,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<div class="header-right">
 				
 				
-				<!--search-box-->
+<!--				search-box
 				<div class="search-box">
 					<form class="input">
 						<input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31" />
@@ -414,8 +432,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</svg>
 						</label>
 					</form>
-				</div><!--//end-search-box-->
-				
+				</div>//end-search-box
+				-->
 				<div class="profile_details">		
 					<ul>
 						<li class="dropdown profile_details_drop">

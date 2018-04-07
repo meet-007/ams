@@ -6,22 +6,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%@include file="AdminHeader.jsp" %>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        		<!-- main content start-->
-      <div id="page-wrapper" style="min-height: 586px;">
-        <div class="main-page">
-            <br/>
-            <br/>
-            <h1>welcome Admin</h1>     
-            <br/>
-            <br/>
-        </div>
-      </div>
+    <%@include file="AdminHeader.jsp" %>
+    <h1>welcome society admin</h1>
     </body>
 </html>

@@ -57,9 +57,12 @@
 
                                 </tbody>
                             </table>
+                                   
+                                    
                             <form action="CalMyMaintenance">
-                                <input type="submit" value="calculate">
+                                <button type="submit" class="btn btn-warning btn-flat btn-pri"><i class="fa fa-calculator" aria-hidden="true"></i>Calculate your maintenance</button>
                             </form>
+                                    
                                    
                         </div>
                     </div>

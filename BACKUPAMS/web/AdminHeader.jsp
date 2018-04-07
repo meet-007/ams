@@ -185,15 +185,15 @@
                                         <i class="fa fa-angle-left pull-right"></i>
                                     </a>
                                     <ul class="treeview-menu">
-                                        <li><a href="M_Cal.jsp"><i class="fa fa-angle-right"></i>Calculate Maintenance</a></li>
+                                        <li><a href="M_Cal_1.jsp"><i class="fa fa-angle-right"></i>Calculate Maintenance</a></li>
                                     </ul>
                                 </li>
-                                <li>
+<!--                                <li>
                                     <a href="Add_Feedback.jsp">
                                         <i class="fa fa-th"></i> <span>Feedback</span>
                                         <small class="label pull-right label-info">08</small>
                                     </a>
-                                </li>
+                                </li>-->
                                 <li class="treeview">
                                     <a href="#">
                                         <i class="fa fa-table"></i> <span>Manage Photo Gallery</span>
@@ -203,7 +203,7 @@
                                         <li><a href="AddAlbum.jsp"><i class="fa fa-angle-right"></i>Add album</a></li>
                                     </ul>
                                 </li>
-                                <li class="treeview">
+<!--                                <li class="treeview">
                                     <a href="#">
                                         <i class="fa fa-envelope"></i> <span>Mailbox </span>
                                         <i class="fa fa-angle-left pull-right"></i><small class="label pull-right label-info1">08</small><span class="label label-primary1 pull-right">02</span></a>
@@ -228,7 +228,7 @@
                                 <li class="header">LABELS</li>
                                 <li><a href="#"><i class="fa fa-angle-right text-red"></i> <span>Important</span></a></li>
                                 <li><a href="#"><i class="fa fa-angle-right text-yellow"></i> <span>Warning</span></a></li>
-                                <li><a href="#"><i class="fa fa-angle-right text-aqua"></i> <span>Information</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right text-aqua"></i> <span>Information</span></a></li>-->
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -397,7 +397,7 @@
                     <div class="header-right">
 
 
-                        <!--search-box-->
+<!--                        search-box
                         <div class="search-box">
                             <form class="input">
                                 <input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31" />
@@ -407,7 +407,7 @@
                                     </svg>
                                 </label>
                             </form>
-                        </div><!--//end-search-box-->
+                        </div>//end-search-box-->
 
                         <div class="profile_details">		
                             <ul>
@@ -442,7 +442,7 @@
                 </div>
                 <!-- //header-ends -->
             </div>
-        </div>	
+     
         <!-- new added graphs chart js-->
 
         <script src="js/Chart.bundle.js"></script>

@@ -54,7 +54,7 @@
 					<td><label>txnAmount*</label></td>
 					<td><input title="TXN_AMOUNT" tabindex="10"
 						type="text" name="TXN_AMOUNT"
-						value="1">
+						value="<%=request.getParameter("amount")%>">
 					</td>
 				</tr>
 				<tr>
