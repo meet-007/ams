@@ -41,6 +41,7 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "SocietyMembers.findByImage", query = "SELECT s FROM SocietyMembers s WHERE s.image = :image"),
     @NamedQuery(name = "SocietyMembers.findByMemberType", query = "SELECT s FROM SocietyMembers s WHERE s.memberType = :memberType")})
 public class SocietyMembers implements Serializable {
+    
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -66,10 +67,6 @@ public class SocietyMembers implements Serializable {
     @Basic(optional = false)
     @Column(name = "member_type")
     private String memberType;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "occupier")
-    private Collection<Apartment> apartmentCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
-    private Collection<Apartment> apartmentCollection1;
     @JoinColumn(name = "lid", referencedColumnName = "lid")
     @ManyToOne(optional = false)
     private Login lid;
@@ -201,5 +198,7 @@ public class SocietyMembers implements Serializable {
     public String toString() {
         return "reg.SocietyMembers[ memId=" + memId + " ]";
     }
+
+    
     
 }

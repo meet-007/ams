@@ -12,6 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
         <title>edit complain</title>
         <link href="css/mycss.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/Validate.js"></script>
     </head>
     <body  class="cbp-spmenu-push">
         <div class="main-content">
@@ -29,8 +30,7 @@
                                     String status = c.getStatus();
                             %>
                             <div class="form-body">
-                                <form class="form-horizontal" action="UpdateComplainServ">
-                                    <input type="hidden" value="<%=c.getComplainId()%>" name="idcomplain">
+                                <form class="form-horizontal">
                                     <div class="form-group"> 
                                         <div class="updtlabel">
                                             <label for="inputEmail3" class="col-sm-2 control-label">complain id :</label> </div>
@@ -64,7 +64,7 @@
                                     <div class="form-group"> 
                                          <div class="updtlabel">
                                              <label for="inputPassword3" class="col-sm-2 control-label">Status :</label></div>
-                                        <div class="col-sm-4"> <select name="status" >
+                                        <div class="col-sm-4"> <select name="Select" required>
 
                                                 <option>--Select--</option>
                                                 <option <%if (status.equals("solved")) {%>selected="selected"<%}%> value="solved">Solved</option>
@@ -75,7 +75,7 @@
                                     <div class="form-group"> 
                                          <div class="updtlabel">
                                              <label for="inputPassword3" class="col-sm-2 control-label">Action taken :</label></div>
-                                        <div class="col-sm-4"> <textarea name="action" rows="8" class="txtarea" cols="10" placeholder="describe action taken"><%if(c.getActionTaken()!= null)%><%=c.getActionTaken()%></textarea> </div> 
+                                        <div class="col-sm-4"> <textarea name="action" rows="8" class="txtarea" cols="10" placeholder="describe action taken" required></textarea> </div> 
                                     </div>
                                     <div class="col-sm-offset-2"> <button type="submit" class="btn btn-default">Update</button> </div>
                                 </form> 

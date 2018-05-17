@@ -12,21 +12,26 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
-</head>
+        <script src="js/Validate.js" type="text/javascript"></script>
+    
+    </head>
+
+
 <body>
   <div class="container">
        <div class="row">
          <div class="col-md-8 col-md-offset-2">
+             <h1>Login Form</h1>
             <div class="well">
                 <form action="Login" role="form" method="POST">
                      <img src="images/download.jpg" height="100" width="100" style="border-radius:50px;margin-left:100px;" alt="Cinque Terre">           
              <div class="form-group">
                      <label for="username">UserName:</label>
-                     <input type="text" class="form-control"placeholder="username" name="username">
+                     <input type="text" class="form-control"placeholder="username" name="username" required>
                </div>
                  <div class="form-group">
                      <label for="password">Password:</label>
-                     <input type="password" class="form-control" placeholder="Password " name="password">
+                     <input type="password" class="form-control" placeholder="Password " name="password" required>
                </div>
                  <div class="checkbox">
                      <label><input type="checkbox">Remember me</label>

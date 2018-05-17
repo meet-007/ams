@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Notice</title>
+        <script src="js/Validate.js" type="text/javascript"></script>
     </head>
     <body  class="cbp-spmenu-push">
         <div class="main-content">
@@ -26,12 +27,12 @@
                             <div class="form-group">
                                 <div class="col-sm-4">
                                 <label class="Date" class="col-sm-2 control-label">Date:</label> 
-                                <input type="date" class="form-control" name="ndate">
+                                <input type="date" class="form-control" name="ndate" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="societyname">Description:</label></br>
-                                <textarea rows="6" cols="50" maxlength="50" name="des"></textarea>
+                                <textarea rows="6" cols="50" maxlength="50" name="des" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-default">Add/Post</button>
                         </form>

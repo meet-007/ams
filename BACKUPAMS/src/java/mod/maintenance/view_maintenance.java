@@ -53,7 +53,7 @@ public class view_maintenance extends HttpServlet {
             Transaction t = s.beginTransaction();
             Criteria c = s.createCriteria(CalMaintenance.class);
             c.add(Restrictions.eq("socId", sid));
-            arr1 = (ArrayList)c.list();
+            arr1 = (ArrayList) c.list();
             t.commit();
             System.out.println(arr1.size());
             if (arr1.isEmpty()) {

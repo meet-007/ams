@@ -18,8 +18,8 @@
     parameters.put("CHANNEL_ID", PaytmConstants.CHANNEL_ID);
     parameters.put("INDUSTRY_TYPE_ID", PaytmConstants.INDUSTRY_TYPE_ID);
     parameters.put("WEBSITE", PaytmConstants.WEBSITE);
-    parameters.put("MOBILE_NO", "8141740921");
-    parameters.put("EMAIL", "meetchaudhary97@gmail.com");
+    parameters.put("MOBILE_NO", "9687788238");
+    parameters.put("EMAIL", "khatriravi374@gmail.com");
     parameters.put("CALLBACK_URL", "http://localhost:8084/backup_ams/pgResponse.jsp");
 
     String checkSum = CheckSumServiceHelper.getCheckSumServiceHelper().genrateCheckSum(PaytmConstants.MERCHANT_KEY, parameters);

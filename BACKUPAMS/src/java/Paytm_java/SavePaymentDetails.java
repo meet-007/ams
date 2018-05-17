@@ -5,12 +5,19 @@
  */
 package Paytm_java;
 
+import GetSmem.GetMemberFrmLid;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import org.hibernate.Session;
+import reg.Login;
+import reg.PaidMaintenance;
+import reg.SocietyMembers;
+import reg.Transaction;
 
 /**
  *
@@ -31,19 +38,37 @@ public class SavePaymentDetails extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        try  {
+        try {
             /* TODO output your page here. You may use following sample code. */
             String txnid = request.getAttribute("txnid").toString();
             String txndate = request.getAttribute("txndate").toString();
             String msg = request.getAttribute("msg").toString();
-            
-            out.println("txnid----"+txnid);
-            out.println("txndate----"+txndate);
-            out.println("msg-----" +msg);
+            HttpSession sess = request.getSession();
+            double amount = (Double) sess.getAttribute("amount");
+            Login user = (Login) sess.getAttribute("user");
+            GetMemberFrmLid gmf = new GetMemberFrmLid();
+            SocietyMembers sm = gmf.getSmem(user.getLid());
+
+            Session session = hbutil.NewHibernateUtil.getSessionFactory().openSession();
+            org.hibernate.Transaction t = session.beginTransaction();
+            reg.Transaction transaction = new Transaction();
+            transaction.setTId(txnid);
+            transaction.setAmount(amount);
+            transaction.setDate(txndate);
+            session.save(transaction);
+            PaidMaintenance pm = new PaidMaintenance();
+            pm.setMemId(sm.getMemId());
+            pm.setSocId(sm.getSocId().getSid());
+            pm.setTId(transaction.getTpkId());
+            pm.setMemberName(sm.getFname() + " " +sm.getLname());
+            session.save(pm);
+            t.commit();
+        } catch (Exception e) {
+            System.out.println("Exception : " + e.getMessage());
+            e.printStackTrace();
         }
-        catch(Exception e){
-            out.println(e.getMessage());
-        }
+        out.print("payment successfull");
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

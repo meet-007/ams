@@ -26,17 +26,17 @@
                                     <div class="form-group">
                                         <div class="col-sm-4">
                                             <label class="Date" class="col-sm-2 control-label">Date:</label> 
-                                            <input type="date" class="form-control" name="ndate">
+                                            <input type="date" class="form-control" name="ndate" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="Description"> Description of expenditure:</label></br>
-                                        <textarea rows="6" cols="50" maxlength="50" name="des"></textarea>
+                                        <textarea rows="6" cols="50" maxlength="50" name="des" required></textarea>
                                     </div>
                                     <div class="form-group">
                                       <label for="amount" class="col-md-1">Amount:</label>
                                         <div class="col-md-2">
-                                            <input type="number" class="form-control" id="amount" name="num">
+                                            <input type="number" class="form-control" id="amount" name="num" required>
                                         </div>
                                     </div>
                                   <!--  <div class="form-group">

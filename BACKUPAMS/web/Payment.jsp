@@ -63,8 +63,11 @@
                                             <label for="inputEmail3" class="col-sm-2 control-label">Amount :</label> </div>
                                         <div class="col-sm-4">  <%=request.getAttribute("amount")%> </div>
                                     </div>
-                                 
-                                    <input type="hidden" name="amount" value="<%=request.getAttribute("amount")%>" >
+                                    <% Double amt = (Double)request.getAttribute("amount");
+                                    amt /= 100;
+                                    String t = amt.toString();
+                                    %>
+                                    <input type="hidden" name="amount" value="<%=t%>" >
                                  
 
                                     <button type="submit" class="btn btn-warning btn-flat btn-pri col-sm-offset-2"><i class="fa fa-money" aria-hidden="true" ></i>proceed to pay</button>

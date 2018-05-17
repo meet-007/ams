@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : APT
     Created on : 24 Dec, 2017, 11:34:44 AM
     Author     : Dell
@@ -14,7 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-
+        <script src="js/Validate.js" type="text/javascript"></script>
 
     </head>
     <body>
@@ -27,7 +27,7 @@
                                 <div class="well">
                                     <form action="AddAptDetails">
                                         <label for="societyname">Select Owner:</label>
-                                        <select class="form-control" name="selectowner">
+                                        <select class="form-control" name="selectowner" required>
                                             <option></option>
                                             <%
                                                 if(request.getAttribute("memberlist")!=null)
@@ -49,7 +49,7 @@
                                         </br>
                                         <label for="societyname">Select Occupier:</label>
 
-                                        <select class="form-control" name="selectoccupier">
+                                        <select class="form-control" name="selectoccupier" required>
                                             <option></option>
                                             <%
                                                 Iterator it1 = memberlist.iterator();
@@ -67,7 +67,7 @@
                                         </br>
                                         <div class="form-group">
                                             <label for="societyname">Number:</label>
-                                            <input type="text" class="form-control" placeholder="Number" name="aptno">
+                                            <input type="text" class="form-control" placeholder="Number" name="aptno" onkeypress="return isNumberKey(event,this);"required>
                                         </div>
                                         <button type="submit" style="position:relative;top:5px;" class="btn btn-danger">Add</button>
                                     </form>

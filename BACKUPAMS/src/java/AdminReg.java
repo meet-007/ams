@@ -52,7 +52,7 @@ public class AdminReg extends HttpServlet {
            l.setUsername(uname);
            l.setPassword(pwd);
            l.setRole("Society admin");
-           l.setStatus("pending");
+           l.setStatus("allowed");
            s.save(l);
            Society soc = new Society();
            soc.setSocName(name);

@@ -67,6 +67,7 @@ public class CalMyMaintenance extends HttpServlet {
             }
             double maintenance = total/aptlist.size();
             request.setAttribute("amount", maintenance);
+            sess.setAttribute("amount", maintenance);
             RequestDispatcher rd = request.getRequestDispatcher("Payment.jsp");
             rd.forward(request, response);
 
